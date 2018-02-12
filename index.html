@@ -9,55 +9,74 @@
         * {
             box-sizing: border-box;
         }
-
+        
         p {
             color:green;
         }
-
+        
         .yellow {
             color:yellow;
         }
-
+        
         h1 {
             color:red;
         }
-
+        
         .blue {
-           color: dodgerblue;
+            color: dodgerblue;
         }
-
+        
         #red {
             color:red;
         }
-
-        nav ul li {
-            display: inline-block;
-
-        }
-        nav ul li a {
-            display: inline-block;
-            border: 3px solid darkred;
+        
+        .btn {
+            cursor: pointer;
             margin: 10px;
             padding: 10px;
-            background-color: red;
             color: white;
             text-decoration: none;
+            border-radius: 10px;
         }
 
-        nav ul li a:hover {
-            background-color: indianred;
+        .btn-red {
+            background-color: red;
+            border: 3px solid darkred;
+        }
+
+        .btn-red:hover {
+            background-color: darkred;
             border: 3px solid red;
         }
 
+        .btn-blue {
+            background-color: blue;
+            border: 3px solid dodgerblue;
+        }
+
+        .btn-blue:hover {
+            background-color: dodgerblue;
+            border: 3px solid blue;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            
+        }
+        nav ul li a {
+            display: inline-block;
+        }
+        
+        
         nav ul {
             padding: 0;
         }
-
+        
         form {
             border: 2px dashed grey;
             padding: 20px;
         }
-
+        
         input {
             display: block;
             width: 100%;
@@ -65,7 +84,7 @@
             border: 1px solid #ccc;
             padding: 10px;
         }
-
+        
     </style>
 </head>
 <body>
@@ -78,7 +97,7 @@
         inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais
         recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
     </p>
-
+    
     <p>
         Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem
         ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney
@@ -88,7 +107,7 @@
         livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum, "Lorem Ipsum
         dolor sit amet..." vem de uma linha na seção 1.10.32.
     </p>
-
+    
     <p class="blue yellow">
         Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o
         século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos
@@ -96,21 +115,21 @@
         essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem
         Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
     </p>
-
+    
     <form action="">
         <input type="text" placeholder="Texto">
         <input type="email" placeholder="E-mail">
         <input type="number" placeholder="Número">
         <input type="date">
-        <button>Salvar</button>
+        <button class="btn btn-blue">Salvar</button>
     </form>
     
     <nav id="nav">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Produtos</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="" class="btn btn-red">Home</a></li>
+            <li><a href="" class="btn btn-red">Sobre</a></li>
+            <li><a href="" class="btn btn-red">Produtos</a></li>
+            <li><a href="" class="btn btn-red">Contato</a></li>
         </ul>
     </nav>
 </body>
