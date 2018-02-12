@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         p {
             color:green;
         }
@@ -49,6 +53,19 @@
             padding: 0;
         }
 
+        form {
+            border: 2px dashed grey;
+            padding: 20px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -79,6 +96,14 @@
         essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem
         Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
     </p>
+
+    <form action="">
+        <input type="text" placeholder="Texto">
+        <input type="email" placeholder="E-mail">
+        <input type="number" placeholder="Número">
+        <input type="date">
+        <button>Salvar</button>
+    </form>
     
     <nav id="nav">
         <ul>
